@@ -34,7 +34,7 @@ WHERE schemaname = 'public';
 CREATE VIEW vista_edades_pacientes AS
 SELECT EXTRACT(YEAR FROM AGE(CURRENT_DATE, fecha_nacimiento))
 From pacientes;
-<img src="imágenes/query02.png" alt="Resultados del Query 2" style="width:500px;"/> 
+<img src="imágenes/query02a.png" alt="Resultados del Query 2" style="width:500px;"/> 
 
 ### 3. La paciente, “Luciana Gómez”, ha cambiado de dirección. Antes vivía en “Avenida Las Heras 121” en “Buenos Aires”, pero ahora vive en “Calle Corrientes 500” en “Buenos Aires”. Actualizar la dirección de este paciente en la base de datos.
 UPDATE pacientes
