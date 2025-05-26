@@ -11,15 +11,23 @@
  Es una base de datos relacional porque los datos están organizados de manera estructurada, en tablas, columnas, y estos están relacionados (como se verá en el diagrama entidad-relación). En cuanto a su función definimos que esta sería un data warehouse debido a que los datos almacenados se utilizan para posteriores consultas más complejas (serán utilizados para cálculos estadísticos).
 
 ### 2. Armar el diagrama entidad-relación de la base de datos dada. 
-<img src="diagrama_entidad-relacion.jpg" alt="ejemplo_diagrama-ER" style="width:500px;"/> 
+<img src="imágenes/diagrama_entidad-relacion.jpg" alt="ejemplo_diagrama-ER" style="width:500px;"/> 
 
 
 ### 3. Armar el Modelo relacional de la base de datos dada.
-<img src="modelo_logico_entidad-relacion.jpg" alt="ejemplo_modelo logico-ER" style="width:500px;"/> 
+<img src="imágenes/modelo_logico_entidad-relacion.jpg" alt="ejemplo_modelo logico-ER" style="width:500px;"/> 
 
 ### 4. Considera que la base de datos está normalizada. En caso que no lo esté, ¿cómo podría hacerlo?
 
-Respuesta
+Se puede decir que la base de datos está normalizada en su mayoría, ya que cumple con la Primera, Segunda, y Tercera forma normal.
+ La 1ra forma normal indica que todas las tablas contengan valores que estén en su estado más primitivo, es decir, que no se puedan desglosar. Esto se cumple para casi todos los atributos de las distintas entidades/tablas. También todas poseen una clave primaria bien definida.
+ La 2da forma normal establece que además de cumplir con la 1ra forma normal, los atributos no claves deben depender de sus claves primarias, no de una en particular, debido a que si un atributo dependiera de solo una clave primaria habiendo otras más, ese atributo dejaría de tener sentido. Un ejemplo de esto es que en la tabla consultas esté el “id_médico” y el “nombre” del médico, el nombre es un atributo que ya se puede deducir por el id_médico y no tendría sentido dejarlo.
+ Por último, la 3ra forma normal, además de que se deba cumplir la 2da, también exige que los atributos dependen exclusivamente de la clave primaria, y no de atributos no claves, y esto se cumple en su totalidad.
+
+ Bajo el criterio tomado por el grupo se considera que la base de datos está normalizada en su mayoría, dado que se encontraron algunos atributos que podrían dividirse más y estar en un estado más primitivo, como por ejemplo el “nombre” de los pacientes y médicos se los podría dividir en “nombre” y “apellido”. También se encontraron otros atributos tipo string que son de texto libre, como “ciudad” y “diagnóstico”, que pueden indicar lo mismo de distintas maneras. Una manera de evitar este problema sería generando distintas tablas para esos atributos, y asignando un id a cada posibilidad del mismo ( en el caso de ciudades, darle un id a cada ciudad, y para diagnóstico lo mismo).
+
+ Dejando estos casos de lado se puede considerar que la base de datos está bien normalizada.
+
 
 ## **PARTE 2:** Bases de Datos
 
