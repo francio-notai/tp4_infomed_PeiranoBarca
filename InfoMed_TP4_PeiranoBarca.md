@@ -1,7 +1,7 @@
 # Trabajo Práctico N°4
 ![image](https://github.com/user-attachments/assets/f2e54dc0-6027-4cd7-817a-a42e47570113)
 
-## _Autoras:_ 
+## _Autores:_ 
 * Juan Manuel Peirano
 * Francisco José Barca
 
@@ -11,11 +11,11 @@
  Es una base de datos relacional porque los datos están organizados de manera estructurada, en tablas, columnas, y estos están relacionados (como se verá en el diagrama entidad-relación). En cuanto a su función definimos que esta sería un data warehouse debido a que los datos almacenados se utilizan para posteriores consultas más complejas (serán utilizados para cálculos estadísticos).
 
 ### 2. Armar el diagrama entidad-relación de la base de datos dada. 
-<img src="imágenes/helisulbaranBD02.png" alt="ejemplo_modelo-ER" style="width:500px;"/> 
+<img src="Diagrama entidad-relación.jpg" alt="ejemplo_diagrama-ER" style="width:500px;"/> 
 
 
 ### 3. Armar el Modelo relacional de la base de datos dada.
-![modelo_relacional](imágenes/modelo_relacional.png)
+<img src="Modelo Logico entidad-relacion.jpg" alt="ejemplo_modelo logico-ER" style="width:500px;"/> 
 
 ### 4. Considera que la base de datos está normalizada. En caso que no lo esté, ¿cómo podría hacerlo?
 
