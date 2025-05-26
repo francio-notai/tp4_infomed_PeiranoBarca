@@ -11,7 +11,7 @@
  Es una base de datos relacional porque los datos están organizados de manera estructurada, en tablas, columnas, y estos están relacionados (como se verá en el diagrama entidad-relación). En cuanto a su función definimos que esta sería un data warehouse debido a que los datos almacenados se utilizan para posteriores consultas más complejas (serán utilizados para cálculos estadísticos).
 
 ### 2. Armar el diagrama entidad-relación de la base de datos dada. 
-<img src="diagrama_entidad-relación.jpg" alt="ejemplo_diagrama-ER" style="width:500px;"/> 
+<img src="diagrama_entidad-relacion.jpg" alt="ejemplo_diagrama-ER" style="width:500px;"/> 
 
 
 ### 3. Armar el Modelo relacional de la base de datos dada.
