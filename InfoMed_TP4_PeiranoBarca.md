@@ -33,9 +33,12 @@ Se puede decir que la base de datos está normalizada en su mayoría, ya que cum
 
 ### 1. Cuando se realizan consultas sobre la tabla paciente agrupando por ciudad los tiempos de respuesta son demasiado largos. Proponer mediante una query SQL una solución a este problema.
 
-SELECT indexname, indexdef  
-FROM pg_indexes  
-WHERE schemaname = 'public';  
+CREATE INDEX id_ciudad
+ON pacientes (ciudad);
+--vista del índice
+SELECT indexname, indexdef
+FROM pg_indexes
+WHERE schemaname = 'public'; 
 <img src="imágenes/query01.png" alt="Resultados del Query 1" style="width:500px;"/> 
 
 ### 2. Se tiene la fecha de nacimiento de los pacientes. Se desea calcular la edad de los pacientes y almacenarla de forma dinámica en el sistema ya que es un valor típicamente consultado, junto con otra información relevante del paciente.
