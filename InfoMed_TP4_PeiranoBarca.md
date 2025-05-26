@@ -195,7 +195,7 @@ ORDER BY total DESC;
 <img src="imágenes/query17.png" alt="Resultados del Query 17" style="width:500px;"/>
 
 ### 18. Obtener el nombre del médico junto con el total de pacientes a los que ha atendido, ordenado por el total de pacientes en orden descendente.
-SELECT medicos.nombre, count(distinct consultas.id_paciente) as total_pacientes  
+SELECT medicos.nombre, COUNT(distinct consultas.id_paciente) AS total_pacientes  
 FROM consultas  
 INNER JOIN medicos  
 ON consultas.id_medico = medicos.id_medico  
