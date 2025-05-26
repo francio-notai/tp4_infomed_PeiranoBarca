@@ -39,6 +39,7 @@ ON pacientes (ciudad);
 SELECT indexname, indexdef
 FROM pg_indexes
 WHERE schemaname = 'public'; 
+
 <img src="imágenes/query01.png" alt="Resultados del Query 1" style="width:500px;"/> 
 
 ### 2. Se tiene la fecha de nacimiento de los pacientes. Se desea calcular la edad de los pacientes y almacenarla de forma dinámica en el sistema ya que es un valor típicamente consultado, junto con otra información relevante del paciente.
