@@ -34,10 +34,15 @@ Se puede decir que la base de datos está normalizada en su mayoría, ya que cum
 ### 1. Cuando se realizan consultas sobre la tabla paciente agrupando por ciudad los tiempos de respuesta son demasiado largos. Proponer mediante una query SQL una solución a este problema.
 
 CREATE INDEX id_ciudad
+
 ON pacientes (ciudad);
+
 --vista del índice
+
 SELECT indexname, indexdef
+
 FROM pg_indexes
+
 WHERE schemaname = 'public'; 
 
 <img src="imágenes/query01.png" alt="Resultados del Query 1" style="width:500px;"/> 
